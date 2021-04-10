@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>樂活幼兒園</title>
+    <link rel="icon" href="12.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript"
+        src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=DZNiMWFPuzkzPutDddzDrw-K0345ydOjiZIIiIf3H5mkYgLY7VxUwT404AYd8u3Aqvg4Vh5dRkY8eMdDGXwBYzTxPUcCU_hKPQrZIqksr5_SFzB3lsqfoWzCjCWsKh-gZ-cmBh8dkx1Tfqz38at0ZeNerXZiuSLVzTLgzSOSB9HniqP-63CUGmcHKYA6r5f1u-D32l485-_PX7l16za4sZx-RzKzvBvQXiPmLfRi-Hu2ij_c_mmjaW6LzL2MjWakuH_tTF2hGOzjQhrZEVAW5DKaJ68Vtymnq7c6VT28KZ2oV8jPHBgHhGPG0L8bjLT8Q04STVR0X2pkPkQseNRHpKYm3dHqJbZt_5v8ikIKBdqLNZBNZR69_Lcu1Uvg0NeesFQXe0xFT10Or2t_bI9q4gOykJtdWfflydieTzGSSCOm5KXIPVC-AJZunZCCmnKnnhWurDC6WuYngRJPZJMC3g"
+        charset="UTF-8"></script>
+</head>
+
+<style>
+    .carousel-indicators .active {
+        background-color: blue;
+    }
+
+    .carousel-control-prev-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-control-next-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-indicators li {
+        height: 5px;
+        border-radius: 10px;
+    }
+
+    .mycarousel-caption {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        width: 75%;
+        padding: 20px;
+        z-index: 22;
+        max-width: 1150px;
+        text-align: left;
+        margin: auto;
+        overflow: hidden;
+        transform: translateY(-50%);
+    }
+
+    .tital {
+        margin-bottom: 7px;
+        font-size: 16px;
+        color: #6CC;
+        text-decoration: none;
+    }
+
+    .tital1 {
+        margin-bottom: 7px;
+        font-size: 16px;
+        color: #6CC;
+        text-decoration: none;
+    }
+
+    .tital:hover {
+        color: rgb(190, 214, 214);
+        text-decoration: none;
+    }
+
+    .text {
+        font-size: 14px;
+        color: #CCC;
+        text-decoration: none;
+    }
+
+    .text:hover {
+        color: white;
+        text-decoration: none;
+    }
+
+    .myclass {
+        height: 550px;
+        width: 100%;
+        background: no-repeat;
+        background-color: #eee;
+        background-size: 100%;
+    }
+
+    .myclass1 {
+        height: 381px;
+        width: 100%;
+        background: no-repeat;
+        background-color: #eee;
+        background-size: cover;
+    }
+
+    .sticky {
+        position: fixed;
+        background-color: rgb(203, 223, 150);
+        border-color: white;
+        z-index: 1030;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+</style>
+
+<body>
+
+
+
+
+    <!-- navbar -->
+    <nav class="navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <div style="border-bottom: solid 1px #e3e3e3;">
+                <a class="navbar-brand mt-2" href="index.html"><img src="12.png"> 樂活幼兒園</a>
+            </div>
+            <div class="navbar" id="navbar">
+                <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="tital" style="display: none;">
+                    <a class="navbar-brand mt-2" href="index.html"><img style="height: 30px; width: 30px;" src="12.png"> 樂活幼兒園</a>
+                </div>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item dropdown mr-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                role="button" aria-haspopup="true" aria-expanded="false">園所介紹</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">關於我們</a>
+                                <a class="dropdown-item" href="#">師資介紹</a>
+                                <a class="dropdown-item" href="#">環境介紹</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link" href="教學理念.html">教學理念</a>
+                        <li class="nav-item dropdown mr-2">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">班級介紹</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                <a class="dropdown-item" href="#">一般班級</a>
+                                <a class="dropdown-item" href="#">多元班級</a>
+                            </div>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link " href="#">活動寫真</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link " href="#">最新消息</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-link " href="家長留言板p1.html">家長留言板</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">線上預約</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- carlbanner -->
+    <div id="carlBanner" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carlBanner" data-slide-to="0" class="active"></li>
+            <li data-target="#carlBanner" data-slide-to="1"></li>
+            <li data-target="#carlBanner" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img class="myclass" src="1.jpg" alt="First slide">
+                <div class="mycarousel-caption">
+                    <h2>尊重生命.關懷社會，以孩子為主體，並尊重差異。</h2>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img class="myclass" src="2.jpg" alt="Second slide">
+                <div class="mycarousel-caption">
+                    <h2>閱讀是打開世界之門的鑰匙</h2>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="myclass" src="3.jpg" alt="Third slide">
+                <div class="mycarousel-caption">
+                    <h2>走進童心世界，和孩子們一起成長</h2>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carlBanner" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carlBanner" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <!-- Start Container -->
+    <div class="container mt-5">
+
+        <!-- 第一段 -->
+        <div class="row">
+            <div class="col-lg-3 mb-4" data-aos="zoom-in">
+                <div class="card text-center" style="border: none; background-size: cover;">
+                    <img src="8.jpg" class="card-img-top img-fluid" alt="Card image cap" style="border-radius:50%; ">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">園所介紹</h2>
+                        <p class="card-text" style="height: 50px; background-size: cover;">歡迎來到樂活幼兒園</p>
+                        <a href="#" class="btn btn-primary stretched-link">
+                            More
+                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4" data-aos="zoom-in">
+                <div class="card text-center" style="border: none; background-size: cover;">
+                    <img src="9.jpg" class="card-img-top img-fluid" alt="Card image cap" style="border-radius:50%; ">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">教育理念</h2>
+                        <p class="card-text" style="height: 50px; background-size: cover;">培養孩子具備「一輩子帶著走的能力」</p>
+                        <a href="#" class="btn btn-primary stretched-link">
+                            More
+                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4" data-aos="zoom-in">
+                <div class="card text-center" style="border: none; background-size: cover;">
+                    <img src="10.jpeg" class="card-img-top img-fluid" alt="Card image cap" style="border-radius:50%; ">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">專業師資</h2>
+                        <p class="card-text" style="height: 50px; background-size: cover;">快樂自信的老師才能教出快樂自信的孩子</p>
+                        <a href="#" class="btn btn-primary stretched-link">
+                            More
+                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-4" data-aos="zoom-in">
+                <div class="card text-center" style="border: none; background-size: cover;">
+                    <img src="11.jpg" class="card-img-top img-fluid" alt="Card image cap" style="border-radius:50%; ">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">入園資訊</h2>
+                        <p class="card-text" style="height: 50px; background-size: cover;">感謝您願意讓樂活成為寶貝的啟蒙教育園</p>
+                        <a href="#" class="btn btn-primary stretched-link">
+                            More
+                            <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 第二段 -->
+        <div class="row">
+            <div class="col-lg-7" data-aos="fade-down" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <h2>環境導覽</h2>
+                <p>在綠草、林樹與花卉的滋潤下，讓幼兒在戶外擁有最自然及安全的活動空間</p>
+                <div id="environment" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#environment" data-slide-to="0" class="active"></li>
+                        <li data-target="#environment" data-slide-to="1"></li>
+                        <li data-target="#environment" data-slide-to="2"></li>
+                        <li data-target="#environment" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner myclass1" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="4.jpg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="5.png">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="6.jpeg">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="7.jpg">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#environment" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#environment" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-5" data-aos="fade-up" data-aos-duration="1500" data-aos-anchor-placement="top-center" data-aos-once="true">
+                <div class="container">
+                    <h2>最新消息</h2>
+                    <br>
+                    <div class="accordion" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left" type="button"
+                                        data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        4/12(一)小班主題教學觀摩
+                                    </button>
+                                </h2>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <p></p>
+                                    觀摩日期 4/12(一) <br>
+                                    觀摩時間 上午9:30~11:30 <br>
+                                    　　　　 下午1:30~3:30 <br>
+                                    此次活動是教小孩們做一些手藝。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        4/7(三)樂活大班說故事比賽
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    活動日期 4/7(三) <br>
+                                    歡迎各位家長蒞臨，幫各自的孩童加油。
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        4/2(五)~4/5(一)兒童節放假
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    一年一度的兒童節，放假四天。<br>
+                                    請各位家長多多帶孩子們出門遊樂!!!<br>
+                                    如果對此方面有任何疑問，歡迎聯絡我們。 <br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingFour">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                        data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        3/26(五)特教研習講座
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    活動日期 3-26(五)<br>
+                                    成為孩子們的心靈捕手!!!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End Container -->
+
+    <!-- 聯絡我們 -->
+    <div class="row mt-5 text-center bg-light py-3">
+        <div class="col-lg-12">
+            <h3>聯絡我們</h3>
+            <p>欲報名或預約參觀家長，請先來電園方或利用網路預約，我們將儘快為您安排，以節省您寶貴的時間。</p>
+        </div>
+        <div class="col-lg-12 mb-3">
+            <a class="btn btn-success btn-lg" href="#">線上預約</a>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-info hidden-xs py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="footer-text text-light">
+                        <h2 style="color: coral;">樂活幼兒園</h2>
+                        <p>欲報名或預約參觀家長，請先來電園方或利用網路預約，<br>
+                            我們將儘快為您安排，以節省您寶貴的時間。</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-sm-3">
+
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled">
+                                <li class="tital1">園所介紹</li>
+                                <li><a class="text" href="#">關於我們</a></li>
+                                <li><a class="text" href="#">師資介紹</a></li>
+                                <li><a class="text" href="#">環境介紹</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled">
+                                <li class="tital1">班級介紹</li>
+                                <li><a class="text" href="#">一般班級</a></li>
+                                <li><a class="text" href="#">多元班級</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-3">
+                            <ul class="list-unstyled">
+                                <li><a class="tital" href="教學理念.html">教學理念</a></li>
+                                <li><a class="tital" href="#">活動寫真</a></li>
+                                <li><a class="tital" href="#">最新消息</a></li>
+                                <li><a class="tital" href="家長留言板p1.html">家長留言板</a></li>
+                                <li><a class="tital" href="#">線上預約</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-3" style="background-color: black;">
+        <p class="text-center text-white">版權所有 &copy; 2021 樂活幼兒園 &copy; All Rights Reserved.</p>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.7/holder.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        var tital = document.getElementById("tital");
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+                tital.style.display = "inline";
+                
+            } else {
+                navbar.classList.remove("sticky");
+                tital.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
