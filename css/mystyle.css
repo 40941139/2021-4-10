@@ -1,0 +1,89 @@
+.carousel-indicators .active {
+    background-color: blue;
+}
+
+.carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-control-next-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.carousel-indicators li {
+    height: 5px;
+    border-radius: 10px;
+}
+
+.mycarousel-caption {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 75%;
+    padding: 20px;
+    z-index: 40;
+    max-width: 1150px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.tital {
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: #6CC;
+    text-decoration: none;
+}
+
+.tital1 {
+    margin-bottom: 7px;
+    font-size: 16px;
+    color: #6CC;
+    text-decoration: none;
+}
+
+.tital:hover {
+    color: rgb(190, 214, 214);
+    text-decoration: none;
+}
+
+.text {
+    font-size: 14px;
+    color: #CCC;
+    text-decoration: none;
+}
+
+.text:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.myclass {
+    height: 550px;
+    width: 100%;
+    background: no-repeat;
+    background-color: #eee;
+    background-size: 100%;
+}
+
+.myclass1 {
+    height: 381px;
+    width: 100%;
+    background: no-repeat;
+    background-color: #eee;
+    background-size: cover;
+}
+
+.sticky {
+    position: fixed;
+    background-color: rgb(203, 223, 150);
+    border-color: white;
+    z-index: 1030;
+    top: 0;
+    right: 0;
+    left: 0;
+}
